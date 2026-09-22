@@ -98,17 +98,24 @@ export default function PantallaPage() {
 
   return (
     <main className="flex h-screen w-screen flex-col overflow-hidden bg-gray-50">
-      <header className="flex shrink-0 flex-col items-center justify-center gap-1 py-4 md:py-6">
-        <Image src="/logo.png" alt="Combi" width={140} height={92} priority />
-        <p className="text-sm font-semibold uppercase tracking-widest text-gray-400 md:text-base">
+      <header className="flex shrink-0 flex-col items-center justify-center gap-1 py-2">
+        <Image
+          src="/logo.png"
+          alt="Combi"
+          width={1500}
+          height={982}
+          priority
+          className="h-auto w-80 sm:w-[28rem] md:w-[34rem] lg:w-[40rem]"
+        />
+        <p className="text-[10px] font-semibold uppercase tracking-widest text-gray-400 md:text-xs">
           Tu pedido está en camino
         </p>
       </header>
 
       <div className="flex flex-1 overflow-hidden">
         <section className="flex w-1/2 flex-col overflow-hidden px-4 pb-6 md:px-8">
-          <div className="mb-6 shrink-0 rounded-3xl bg-[#5BC2C9] py-4 shadow-lg md:py-6">
-            <h2 className="text-center text-3xl font-black uppercase tracking-wide text-white md:text-4xl lg:text-5xl">
+          <div className="mb-4 shrink-0 rounded-2xl bg-[#5BC2C9] py-1.5 shadow-lg">
+            <h2 className="text-center text-xs font-black uppercase tracking-wide text-white sm:text-sm">
               En preparación
             </h2>
           </div>
@@ -127,8 +134,8 @@ export default function PantallaPage() {
         </section>
 
         <section className="flex w-1/2 flex-col overflow-hidden bg-orange-50/30 px-4 pb-6 md:px-8">
-          <div className="mb-6 shrink-0 rounded-3xl bg-[#F07C71] py-4 shadow-lg md:py-6">
-            <h2 className="text-center text-3xl font-black uppercase tracking-wide text-white md:text-4xl lg:text-5xl">
+          <div className="mb-4 shrink-0 rounded-2xl bg-[#F07C71] py-1.5 shadow-lg">
+            <h2 className="text-center text-xs font-black uppercase tracking-wide text-white sm:text-sm">
               Listo para retirar
             </h2>
           </div>

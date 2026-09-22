@@ -28,7 +28,7 @@ export function PedidoTicket({ pedido, isPulsing }: PedidoTicketProps) {
     >
       <span
         className={cn(
-          "text-[15px] leading-none tracking-tight md:text-[18px]",
+          "text-[10px] leading-none tracking-tight md:text-[13px]",
           isListo ? "font-black text-white" : "font-bold text-gray-800"
         )}
       >

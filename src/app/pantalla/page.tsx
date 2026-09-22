@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence } from "framer-motion";
+import Image from "next/image";
 import { supabase } from "@/utils/supabase/client";
 import type { Pedido } from "@/types/database.types";
 import { PedidoTicket } from "@/components/pantalla/PedidoTicket";
@@ -98,10 +99,7 @@ export default function PantallaPage() {
   return (
     <main className="flex h-screen w-screen flex-col overflow-hidden bg-gray-50">
       <header className="flex shrink-0 flex-col items-center justify-center gap-1 py-4 md:py-6">
-        <h1 className="text-3xl font-black tracking-tight md:text-4xl">
-          <span className="text-[#5BC2C9]">Com</span>
-          <span className="text-[#F07C71]">bi</span>
-        </h1>
+        <Image src="/logo.png" alt="Combi" width={140} height={92} priority />
         <p className="text-sm font-semibold uppercase tracking-widest text-gray-400 md:text-base">
           Tu pedido está en camino
         </p>

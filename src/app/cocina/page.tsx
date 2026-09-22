@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import Image from "next/image";
 import { ChefHat, BellRing } from "lucide-react";
 import { supabase } from "@/utils/supabase/client";
 import type { Pedido } from "@/types/database.types";
@@ -94,9 +95,13 @@ export default function CocinaPage() {
 
   return (
     <main className="min-h-screen bg-gray-50 p-6">
-      <header className="mb-6 flex items-center gap-3">
-        <ChefHat size={36} className="text-amber-500" />
-        <h1 className="text-3xl font-extrabold text-gray-900">Cocina</h1>
+      <header className="mb-6 flex items-center gap-4">
+        <Image src="/logo.png" alt="Combi" width={100} height={66} />
+        <div className="h-8 w-px bg-gray-200" />
+        <div className="flex items-center gap-2">
+          <ChefHat size={28} className="text-amber-500" />
+          <h1 className="text-2xl font-extrabold text-gray-900">Cocina</h1>
+        </div>
       </header>
 
       {loading ? (

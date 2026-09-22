@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { Plus, Trash2, Send, CheckCircle2, XCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -89,6 +90,13 @@ export default function AdminPage() {
   return (
     <main className="min-h-screen bg-gray-50 px-4 py-10">
       <div className="mx-auto max-w-xl">
+        <Image
+          src="/logo.png"
+          alt="Combi"
+          width={100}
+          height={66}
+          className="mb-3"
+        />
         <h1 className="text-2xl font-extrabold text-gray-900">
           Crear pedido de prueba
         </h1>

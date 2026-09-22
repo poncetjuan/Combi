@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ChefHat, MonitorPlay, ClipboardPlus } from "lucide-react";
 
@@ -28,11 +29,8 @@ const LINKS = [
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center gap-10 bg-gray-50 px-4 py-16">
-      <div className="text-center">
-        <h1 className="text-4xl font-black tracking-tight">
-          <span className="text-[#5BC2C9]">Com</span>
-          <span className="text-[#F07C71]">bi</span>
-        </h1>
+      <div className="flex flex-col items-center text-center">
+        <Image src="/logo.png" alt="Combi" width={260} height={170} priority />
         <p className="mt-2 text-gray-500">
           Kitchen Display System para tu negocio gastronómico.
         </p>

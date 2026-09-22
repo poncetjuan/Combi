@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center gap-10 bg-gray-50 px-4 py-16">
       <div className="flex flex-col items-center text-center">
-        <Image src="/logo.png" alt="Combi" width={260} height={170} priority />
+        <Image src="/logo.png" alt="Combi" width={520} height={340} priority />
         <p className="mt-2 text-gray-500">
           Kitchen Display System para tu negocio gastronómico.
         </p>

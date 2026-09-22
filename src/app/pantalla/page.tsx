@@ -105,9 +105,9 @@ export default function PantallaPage() {
           width={1500}
           height={982}
           priority
-          className="h-auto w-80 sm:w-[28rem] md:w-[34rem] lg:w-[40rem]"
+          className="h-auto w-20 sm:w-28 md:w-[8.5rem] lg:w-40"
         />
-        <p className="text-[10px] font-semibold uppercase tracking-widest text-gray-400 md:text-xs">
+        <p className="text-xl font-semibold uppercase tracking-widest text-gray-400 md:text-2xl">
           Tu pedido está en camino
         </p>
       </header>
@@ -115,7 +115,7 @@ export default function PantallaPage() {
       <div className="flex flex-1 overflow-hidden">
         <section className="flex w-1/2 flex-col overflow-hidden px-4 pb-6 md:px-8">
           <div className="mb-4 shrink-0 rounded-2xl bg-[#5BC2C9] py-1.5 shadow-lg">
-            <h2 className="text-center text-xs font-black uppercase tracking-wide text-white sm:text-sm">
+            <h2 className="text-center text-[24px] font-black uppercase tracking-wide text-white sm:text-[28px]">
               En preparación
             </h2>
           </div>
@@ -135,7 +135,7 @@ export default function PantallaPage() {
 
         <section className="flex w-1/2 flex-col overflow-hidden bg-orange-50/30 px-4 pb-6 md:px-8">
           <div className="mb-4 shrink-0 rounded-2xl bg-[#F07C71] py-1.5 shadow-lg">
-            <h2 className="text-center text-xs font-black uppercase tracking-wide text-white sm:text-sm">
+            <h2 className="text-center text-[24px] font-black uppercase tracking-wide text-white sm:text-[28px]">
               Listo para retirar
             </h2>
           </div>
@@ -150,7 +150,7 @@ export default function PantallaPage() {
               ))}
             </AnimatePresence>
             {listos.length === 0 && (
-              <p className="text-center text-xl font-medium text-[#F07C71]/40">
+              <p className="text-center text-xl font-medium text-[#F07C71]/20">
                 No hay pedidos listos
               </p>
             )}

@@ -96,7 +96,7 @@ export default function CocinaPage() {
   return (
     <main className="min-h-screen bg-gray-50 p-6">
       <header className="mb-6 flex items-center gap-4">
-        <Image src="/logo.png" alt="Combi" width={100} height={66} />
+        <Image src="/logo.png" alt="Combi" width={200} height={132} />
         <div className="h-8 w-px bg-gray-200" />
         <div className="flex items-center gap-2">
           <ChefHat size={28} className="text-amber-500" />
